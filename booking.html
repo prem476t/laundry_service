@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Laundry Service</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="booking-container">
+    <h1>Book Your Laundry Service</h1>
+    <p>Fill in the details below and schedule your pickup easily.</p>
+    <form class="booking-form">
+      <label>
+        Full Name
+        <input type="text" placeholder="Enter your name" required>
+      </label>
+      <label>
+        Address
+        <textarea placeholder="Enter your pickup address" required></textarea>
+      </label>
+      <label>
+        Phone Number
+        <input type="tel" placeholder="Enter your phone number" required>
+      </label>
+      <label>
+        Pickup Date & Time
+        <input type="datetime-local" required>
+      </label>
+      <label>
+        Service Type
+        <select required>
+          <option value="">Select service</option>
+          <option value="dryclean">Dry Cleaning</option>
+          <option value="washfold">Wash & Fold</option>
+          <option value="ironing">Ironing</option>
+        </select>
+      </label>
+      <button type="submit" class="cta-btn">Confirm Booking</button>
+    </form>
+  </div>
+</body>
+</html>
